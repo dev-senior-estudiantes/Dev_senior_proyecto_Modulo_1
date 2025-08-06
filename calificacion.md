@@ -2,7 +2,7 @@
 
 ## 🎯 Evaluación General
 
-**Calificación Final: 4.2/5.0** ⭐⭐⭐⭐
+**Calificación Final: 4.1/5.0** ⭐⭐⭐⭐
 
 ## ✅ Checklist de Revisión
 
@@ -59,17 +59,24 @@
 - **Impacto:** Debería ser "\n" en lugar de "/n"
 - **Severidad:** Media
 
+**🐛 Configuración Git Desactualizada**
+
+- **Ubicación:** Configuración del repositorio
+- **Código:** Rama principal configurada como `master` en lugar de `main`
+- **Impacto:** No sigue las mejores prácticas modernas de GitHub (main como rama principal)
+- **Severidad:** Media
+
 ## 📊 Tabla de Calificaciones
 
 | Componente            | Peso     | Nota        | Puntos   |
 | --------------------- | -------- | ----------- | -------- |
-| Configuración Entorno | 10%      | 5.0/5.0     | 0.50     |
+| Configuración Entorno | 10%      | 4.0/5.0     | 0.40     |
 | Variables y Tipos     | 20%      | 4.5/5.0     | 0.90     |
 | Estructuras Control   | 25%      | 4.0/5.0     | 1.00     |
 | Modularidad           | 25%      | 4.5/5.0     | 1.13     |
 | Manejo Errores        | 15%      | 3.5/5.0     | 0.53     |
 | Calidad Código        | 5%       | 3.0/5.0     | 0.15     |
-| **TOTAL**             | **100%** | **4.2/5.0** | **4.21** |
+| **TOTAL**             | **100%** | **4.1/5.0** | **4.11** |
 
 ## 🎯 Retroalimentación para Estudiante Junior
 
@@ -89,7 +96,9 @@
 
 2. **📝 Revisión Ortográfica:** Pequeños errores como "borarDatos" y "/n" necesitan corrección.
 
-3. **🛡️ Manejo de Excepciones:** Considera agregar try-catch para manejar entradas inesperadas del usuario.
+3. **� Actualizar Configuración Git:** Migrar de `master` a `main` como rama principal para seguir las mejores prácticas actuales.
+
+4. **�🛡️ Manejo de Excepciones:** Considera agregar try-catch para manejar entradas inesperadas del usuario.
 
 ## 📋 Plan de Mejora
 
@@ -114,8 +123,20 @@
    ```
 
 2. **Correcciones menores:**
+
    - Cambiar `borarDatos()` por `borrarDatos()`
    - Cambiar `/n` por `\n` en línea 162
+
+3. **Actualizar configuración Git:**
+
+   ```bash
+   # Renombrar la rama master a main
+   git branch -m master main
+   git push -u origin main
+
+   # En GitHub: cambiar la rama principal de master a main
+   # Settings > General > Default branch > Change to main
+   ```
 
 ### 📈 **Mejoras a Mediano Plazo:**
 
@@ -136,6 +157,6 @@
 
 Este proyecto refleja un **muy buen dominio** de los conceptos del Módulo 1 de Java. A pesar de algunos errores menores que son completamente normales en el aprendizaje, has creado un sistema funcional y bien organizado.
 
-**Tu fortaleza principal** es la capacidad de estructurar código de manera modular y crear interfaces de usuario claras. Con las correcciones menores sugeridas, este proyecto sería ejemplar.
+**Tu fortaleza principal** es la capacidad de estructurar código de manera modular y crear interfaces de usuario claras. Con las correcciones sugeridas (código y configuración Git), este proyecto sería ejemplar.
 
 **¡Continúa con esta dedicación y atención al detalle! Estás en el camino correcto para convertirte en un excelente programador.** 🚀
